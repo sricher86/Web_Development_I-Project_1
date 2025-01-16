@@ -1,0 +1,541 @@
+html,body {
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Telephone: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100%;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  background-size: center;
+/*   -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+ */  transform: translateX(-50%) translateY(-35%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.titre {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 19px;
+  font-weight: 100;
+  padding-left: 10px;
+}
+
+.titre-index {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 30pt;
+  font-weight: 100;
+}
+
+.titre-nav {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 14px;
+  letter-spacing:1pt;
+}
+
+.liens {
+  color: white;
+  text-decoration: none;
+}
+
+.liens::after {
+  color: white;
+}
+
+.colonne-1 {
+  position: relative;
+  background-image: url('../img/pexels-flo-dahm-699459.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: #c9a685;
+}
+
+.prop-col-1 {
+  position: relative;
+  background-image: url('../img/pexels-mikhail-nilov-7989235.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: #f8f2ed;
+  z-index: -1
+}
+
+.prop-col-2 {
+  position: relative;
+  background-color: rgba(90, 90, 90, 0.75);
+  height: 100%;
+}
+
+.prop-col-3 {
+  position: relative;
+  background-color: rgba(90, 90, 90, 0.75);
+  height: 100%;
+}
+
+.col-pers {
+  background-color: rgb(255, 255, 255, .50);
+  height: 100%;  
+}
+
+#col-carte {
+  margin: auto;
+  width: 100%;
+}
+
+.col-entr {
+  background-color: rgb(255, 255, 255, .50);
+  height: 100%;
+}
+
+.col-consult {
+  background-color: rgb(255, 255, 255, .50);
+  height: 100%;
+}
+
+.colonne-2 {
+  position: relative;
+  background-color: #d1b79e;
+  background-size: cover;
+  padding: 0 2em 2em 0;
+}
+
+.col-info {
+  display: block;
+  float: right;
+}
+
+.col-icones {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em 1em 1em 1em;
+}
+
+h1.colonne-2 {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 30pt;
+  font-weight: 500;
+  text-shadow: rgba(0,0,0,.01) 0 0 3px;
+  text-align: right;
+  padding: 35px 5px 0 5px;
+}
+
+h1.blog {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 20pt;
+  font-style: italic;
+  font-weight: 500;
+  text-shadow: rgba(0,0,0,.01) 0 0 3px;
+  padding: 0 1em 0.25em 1em;
+}
+
+.overlay {
+  background-color: rgb(255, 255, 255, .50);
+}
+
+.element-1 {
+  position: relative;
+  display: inline-block;
+}
+
+.element-2 {
+  display: inline-block;
+}
+
+.element-3 {
+  display: inline-block;
+}
+
+.text_colonne_2 {
+  font-size: 11pt;
+  text-align: justify;
+  padding-left: 2em;
+}
+
+h1.a_propos {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 30pt;
+  font-weight: 500;
+  text-shadow: rgba(0,0,0,.01) 0 0 3px;
+  text-align: right;
+  padding: 1em 1em 0 0;
+}
+
+h1.notre-equipe {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 30pt;
+  font-weight: 500;
+  text-shadow: rgba(0,0,0,.01) 0 0 3px;
+  text-align: left;
+  padding: 0 0 0 4%;
+}
+
+h1.projets {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 30pt;
+  font-weight: 500;
+  text-shadow: rgba(0,0,0,.01) 0 0 3px;
+  text-align: right;
+  padding: 1em 0.5em 0em 0.5em;
+}
+
+h2.header-contact {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 30pt;
+  font-weight: 500;
+  text-shadow: rgba(0,0,0,.01) 0 0 3px;
+  text-align: center;
+  padding: 30px 10px;
+}
+.liens-footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.liens-footer:hover {
+  text-decoration: none;
+}
+
+.medias {
+  text-decoration: none;
+}
+
+.hr-footer {
+  width: 60px; 
+  background-color: #c9a685; 
+  height: 2px;
+}
+
+.top-bar-footer {
+  background-color: #c9a685; 
+}
+
+.btn {
+  background-color: #c9a685;
+  color: #000;
+  border: none;
+  /* margin-top:2em; */
+  margin: auto;
+  margin-top: 2%;
+}
+
+.btn:hover {
+  background-color: #f8f2ed;
+  color: #000;
+  transform: scale(1.1);
+}
+
+p.colonne-2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16pt;
+  text-align: right;
+  padding: 5px 10px;
+}
+
+p.header-contact {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12pt;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+p.info {
+  text-align: justify;
+  font-family: 'Lexend Giga', sans-serif;
+  color: #f8f2ed;
+  padding: 2em 1em 1em 1em;
+}
+
+.icon-adress {
+  padding-top: 1em;
+}
+
+.contact {
+  position: relative;
+  margin: auto;
+  width: 90%;
+}
+
+
+.colonne-3 {
+  position: relative;
+  background-image: url('../img/pexels-djordje-petrovic-2102416.jpg');
+  background-size: cover;
+  background-color: rgb(246, 246, 246);
+}
+
+.container-princ-main {
+  padding-top: 2%;
+  /* height: 100%; */
+}
+
+.container-princ {
+  padding-top: 2%;
+  height: 70%;
+}
+
+.container-contact {
+  background-image: url("../img/pexels-gdtography-911738.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  padding-top: 2%;
+}
+
+.container-blog {
+  background-image: url("../img/pexels-gdtography-911738.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2em;
+}
+
+.container-mission {
+  padding-top: 3em;
+}
+
+.container-princ-portfolio {
+  padding-top: 2%;
+  /* height: 100%; */
+  background-image: url("../img/pexels-gdtography-911738.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-equipe {
+  margin-bottom: 10%;  
+}
+
+.rangee-1 {
+  display: flex;
+  align-items: center;
+  height: 20%;
+}
+
+.carte {
+  display: block;
+  margin: auto;
+  padding: 4em 1em 1em 1em;
+}
+
+.overlay {
+  background-color: rgb(255, 255, 255, .70);
+}
+
+.port-titre {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 20pt;
+  font-weight:lighter;
+  color: rgb(39, 39, 39);
+  background-color: rgb(255, 255, 255, .50);
+  border-radius: 25px;
+  padding: 30px 0;
+}
+
+
+.port-rangee-2 {
+  height: 33%;
+  display: block;
+}
+
+.port-rangee-3 {
+  height: 33%;
+  display: block;
+}
+
+.empl-img-1 {
+  width: 100%;
+  border-bottom: #000 2px;
+}
+
+.empl-img-2 {
+  width: 100%;
+}
+
+.empl-img-3 {
+  width: 100%;
+}
+
+.img-car {
+  transition: .3s;
+  width: auto;
+  height: 100%;
+}
+.img-car:hover{
+  transform: scale(1.1);
+}
+
+.img-port {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.icones {
+  color: #f8f2ed;
+}
+
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+
+
+h4.employee {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 18pt;
+  color: #f8f2ed;
+  float: right;
+  padding: 10px 60px;
+}
+
+h4.propos {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 20pt;
+  color: #282828;
+  float: left;
+  padding: 1em 2em 0 2em;
+}
+
+.bio {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 14pt;
+  color: #313131;
+  text-align: justify;
+  padding: 1em 1em 1em 1em;
+}
+
+.bio-top {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 10pt;
+  color: #f8f2ed;
+  text-align: justify;
+  padding: 2% 2%;
+  width: 100%;
+}
+
+.top-menu {
+  background-color: white;
+  color: black;
+  position: fixed;
+}
+
+.menu-princ {
+  height: 8%;
+  position: fixed;
+  z-index: 20;
+}
+
+.parallax {
+  background-image: url("../img/pexels-gdtography-911738.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2 {
+  background-image: url("../img/pexels-gdtography-911738.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.a_propos {
+  font-size: 18pt;
+  color: rgb(39, 39, 39);
+  font-family: 'Lexend Giga', sans-serif;
+}
+
+.a_propos_text {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 14pt;
+  text-align: justify;
+  font-weight:lighter;
+  color: rgb(39, 39, 39);
+  padding: 1em 2em 2em 2em;
+}
+
+.blog_text {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 14pt;
+  text-align: justify;
+  font-weight:lighter;
+  color: rgb(39, 39, 39);
+  padding: 0.5em 1em 1.5em 1.5em;
+}
+
+.list{
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 14pt;
+  font-weight:lighter;
+  color: rgb(39, 39, 39);
+  padding: 1em 2em 2em 2em;
+}
+
+.list-val {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.row-mission {
+  background-color: rgb(255, 255, 255, .50);
+}
+
